@@ -1,0 +1,12 @@
+version: "2"
+
+name: iluvcoffeedb
+
+services:
+  db: 
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: pass123
+    ports:
+      - "5432:5432"
